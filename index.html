@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" class=""><head><script>window.livecodes = window.livecodes || {};</script><title>Untitled Project</title><meta name="title" content="Untitled Project"><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="./style.css"><script src="https://cdn.jsdelivr.net/npm/es-module-shims@1.10.0/dist/es-module-shims.js" async=""></script><script type="importmap">{
+  "imports": {}
+}</script></head><body>
+
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnoJar Corporation</title>
+    <style>
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --primary: #0a0a1a;
+        --accent: #5b4eff;
+        --accent-light: #7c6fff;
+        --text: #e8e8f0;
+        --muted: #9090a8;
+        --surface: #12122a;
+        --card: #1a1a35;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        background-color: var(--primary);
+        color: var(--text);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* ── Header ── */
+      header {
+        background: var(--surface);
+        border-bottom: 1px solid #2a2a50;
+        padding: 1.2rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      header h1 {
+        font-size: 1.6rem;
+        background: linear-gradient(135deg, var(--accent-light), #c084fc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        letter-spacing: 0.03em;
+      }
+
+      /* ── Know More Button ── */
+      #knowMoreBtn {
+        background: var(--accent);
+        color: #fff;
+        border: none;
+        padding: 0.65rem 1.4rem;
+        border-radius: 2rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+        box-shadow: 0 0 16px rgba(91, 78, 255, 0.4);
+      }
+
+      #knowMoreBtn:hover {
+        background: var(--accent-light);
+        transform: translateY(-2px);
+        box-shadow: 0 0 24px rgba(91, 78, 255, 0.6);
+      }
+
+      #knowMoreBtn:active {
+        transform: translateY(0);
+      }
+
+      /* ── Main ── */
+      main {
+        flex: 1;
+      }
+
+      /* ── Home Section ── */
+      .Home {
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 4rem 2rem;
+        background:
+          radial-gradient(ellipse at 60% 40%, rgba(91, 78, 255, 0.15) 0%, transparent 60%),
+          radial-gradient(ellipse at 20% 70%, rgba(192, 132, 252, 0.1) 0%, transparent 50%);
+      }
+
+      .Home h2 {
+        font-size: clamp(2.4rem, 6vw, 4rem);
+        font-weight: 800;
+        margin-bottom: 1rem;
+        line-height: 1.15;
+      }
+
+      .Home p {
+        font-size: clamp(1rem, 2.5vw, 1.3rem);
+        color: var(--muted);
+        max-width: 480px;
+      }
+
+      /* ── About Section ── */
+      .About {
+        background: var(--surface);
+        padding: 5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-top: 1px solid #2a2a50;
+      }
+
+      .About h2 {
+        font-size: clamp(1.6rem, 4vw, 2.4rem);
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        background: linear-gradient(135deg, var(--accent-light), #c084fc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .About p {
+        font-size: 1.05rem;
+        color: var(--muted);
+        max-width: 560px;
+        line-height: 1.75;
+      }
+
+      .co-web-label {
+        margin-top: 2rem;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--muted);
+      }
+
+      .About a {
+        display: inline-block;
+        margin-top: 0.8rem;
+        padding: 0.6rem 1.6rem;
+        border: 2px solid var(--accent);
+        color: var(--accent-light);
+        border-radius: 2rem;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+      }
+
+      .About a:hover {
+        background: var(--accent);
+        color: #fff;
+        box-shadow: 0 0 18px rgba(91, 78, 255, 0.5);
+      }
+
+      /* ── Footer ── */
+      footer.credit {
+        text-align: center;
+        padding: 1.2rem;
+        font-size: 0.8rem;
+        color: #444466;
+        border-top: 1px solid #1e1e38;
+      }
+    </style>
+  
+  
+
+    <header>
+      <h1>InnoJar Corporation</h1>
+      <button id="knowMoreBtn">Know How We Came About</button>
+    </header>
+
+    <main>
+      <section class="Home">
+        <h2>Welcome Onboard</h2>
+        <p>We innovate you with technology and entertainment.</p>
+      </section>
+
+      <section class="About">
+        <h2>Know How We Came About</h2>
+        <p>
+          InnoJar is a peaceful cooperation between InnovateX Group and Jargo
+          Entertainment, visualizing the future of the world through countless
+          innovations.
+        </p>
+        <p class="co-web-label">Visit our co-web on:</p>
+        <a href="http://acsen.hellofigwebsite.com" target="_blank" rel="noopener noreferrer">ACSEN</a>
+      </section>
+    </main>
+
+    <footer class="credit" aria-label="Site credit">
+      Coded by Simms
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const button = document.getElementById('knowMoreBtn');
+        const aboutSection = document.querySelector('.About');
+
+        button.addEventListener('click', () => {
+          aboutSection.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    </script>
+
+  
+<script src="./script.js"></script></body></html>
