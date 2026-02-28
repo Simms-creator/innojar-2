@@ -1,0 +1,34 @@
+{
+  "title": "InnoJar.html",
+  "description": "A WEBSITE THAT IS GOING TO CHANGE THE WORLD FOREVER",
+  "head": "<base href=\"https://cdn.jsdelivr.net/gh/Simms-creator/innojar-html@gh-pages/src/index.html\">\n<meta charset=\"UTF-8\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />",
+  "htmlAttrs": " lang=\"en\"",
+  "tags": [
+    ""
+  ],
+  "activeEditor": "markup",
+  "markup": {
+    "language": "html",
+    "content": "  <head>\n    <meta charset=\"UTF-8\" />\n    <title>InnoJar Corporation</title>\n    \n  </head>\n  <body>\n    <header>\n      <h1><strong>InnoJar Corporation</strong></h1>\n    </header>\n\n    <button id=\"knowMoreBtn\">Know How we came About</button>\n\n    <img src=\"<img src=\"https://via.placeholder.com/600x300\" alt=\"InnoJar Banner\">\"\n      \n    <main>\n      <section class=\"Home\">\n        <h2>Welcome onboard</h2>\n        <p>We innovate you with technology and entertainment</p>\n      </section>\n\n      <section class=\"About\">\n        <h2>Know How We Came About</h2>\n        <p>\n          InnoJar is a peaceful cooperation between InnovateX Group and Jargo\n          Entertainment, visualizing the future of the world through countless\n          innovations.\n        </p>\n        <br />\n        <p><strong>Visit our co-web on:</strong></p>\n        <br />\n        <a href=\"http://acsen.hellofigwebsite.com\" target=\"_blank\">ACSEN</a>\n      </section>\n    </main>\n\n    <!-- Credit tag -->\n    <footer class=\"credit\" aria-label=\"Site credit\">\n      Coded by Simms\n    </footer>\n\n    <script>\n      // JavaScript for smooth scrolling\n      document.addEventListener('DOMContentLoaded', () => {\n        const button = document.getElementById('knowMoreBtn');\n        const aboutSection = document.querySelector('.About');\n\n        button.addEventListener('click', () => {\n          aboutSection.scrollIntoView({ behavior: 'smooth' });\n        });\n      });\n    </script>\n  </body>"
+  },
+  "style": {
+    "language": "css",
+    "content": "/* style.css */\n\nbody {\n  margin: 0;\n  font-family: Arial, sans-serif;\n  color: #fff;\n  min-height: 100vh;\n  /* Gradient background with animation */\n  background: linear-gradient(135deg, #99ffff, #651fff);\n  background-size: 400% 400%;\n  animation: gradientAnimation 15s ease infinite;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 20px;\n}\n\n/* Animate the gradient background */\n@keyframes gradientAnimation {\n  0% {background-position: 0% 50%;}\n  50% {background-position: 100% 50%;}\n  100% {background-position: 0% 50%;}\n}\n\n/* Style header */\nheader {\n  text-align: center;\n  margin-bottom: 20px;\n}\n\nh1 {\n  font-size: 2.5rem;\n  margin: 0;\n}\n\nbutton {\n  background-color: rgba(255, 255, 255, 0.2);\n  border: none;\n  padding: 10px 20px;\n  font-size: 1rem;\n  border-radius: 8px;\n  cursor: pointer;\n  margin-bottom: 20px;\n  color: #00ffff;\n  transition: background-color 0.3s ease;\n}\n\nbutton:hover {\n  background-color: rgba(255, 255, 255, 0.4);\n}\n\n/* Style main sections */\nmain {\n  max-width: 800px;\n  width: 100%;\n}\n\nsection {\n  background: rgba(0, 0, 0, 0.3);\n  padding: 20px;\n  border-radius: 12px;\n  margin-bottom: 20px;\n}\n\nh2 {\n  margin-top: 0;\n}\n\na {\n  color: #cc99ff;\n  text-decoration: none;\n  font-weight: bold;\n}\n\na:hover {\n  text-decoration: bold;\n}"
+  },
+  "script": {
+    "language": "javascript",
+    "content": ""
+  },
+  "stylesheets": [],
+  "scripts": [],
+  "cssPreset": "",
+  "processors": [],
+  "customSettings": {},
+  "imports": {},
+  "types": {},
+  "tests": {
+    "language": "typescript",
+    "content": ""
+  },
+  "version": "48"
+}
